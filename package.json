@@ -32,7 +32,7 @@
     "dev": "npx vite",
     "studio": "remotion studio",
     "chat-only": "npx vite",
-    "build": "remotion bundle",
+    "build": "vite build",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "test-dify": "npx tsx scripts/test-dify.ts",
