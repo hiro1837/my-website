@@ -6,12 +6,12 @@
 }
 
 body {
-  @apply antialiased text-gray-900 bg-white;
+  @apply antialiased text-black bg-white;
   font-family: 'Inter', 'Outfit', sans-serif;
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-linear-to-r from-blue-600 to-indigo-600;
+  @apply bg-clip-text text-transparent bg-linear-to-r from-black to-gray-700;
 }
 
 @keyframes fadeIn {
@@ -35,8 +35,8 @@ body {
 }
 
 .wave-bg {
-  background: #1b63f2;
-  background: linear-gradient(-45deg, #1b63f2, #2563eb, #0ea5e9, #9ec4ff);
+  background: #3b82f6;
+  background: linear-gradient(-45deg, #60a5fa, #93c5fd, #bfdbfe, #dbeafe);
   background-size: 400% 400%;
   animation: liquid-flow 15s ease infinite;
   position: relative;

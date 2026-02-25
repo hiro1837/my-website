@@ -19,15 +19,15 @@ const Hero: React.FC = () => (
 
         <div className="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
             <div className="animate-fade-in">
-                <h2 className="text-5xl font-black mb-6 leading-tight text-white drop-shadow-lg">
+                <h2 className="text-5xl font-black mb-6 leading-tight text-black">
                     次世代のAIエージェントが、<br />
                     あなたの人生を豊かに
                 </h2>
-                <p className="text-xl text-white/90 mb-8 leading-relaxed drop-shadow-md">
+                <p className="text-xl text-black/80 mb-8 leading-relaxed font-medium">
                     最新のAIテクノロジーと直感的なインターフェースで、
                     複雑なタスクをシンプルに。私たちは新しい生活の形を提案します。
                 </p>
-                <button className="bg-white text-[#0ea5e9] px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-100 transition-all hover:scale-105">
+                <button className="bg-black text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-800 transition-all hover:scale-105">
                     サービスを体験する
                 </button>
             </div>
@@ -45,7 +45,7 @@ const Hero: React.FC = () => (
 const Philosophy: React.FC = () => (
     <section id="service" className="scroll-section bg-white text-left">
         <div className="w-full pl-8 md:pl-24 animate-fade-in">
-            <h2 className="text-4xl font-bold text-[#0ea5e9] mb-8">
+            <h2 className="text-4xl font-bold text-black mb-8">
                 プレイオアライフではなくて、<br />人生を楽しくいきましょう
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
@@ -58,8 +58,8 @@ const Philosophy: React.FC = () => (
 );
 
 const Technology: React.FC = () => (
-    <section className="scroll-section bg-[#0ea5e9]">
-        <div className="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-white">
+    <section className="scroll-section bg-gray-50 border-y border-gray-100">
+        <div className="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-black">
             <div className="md:col-span-1">
                 <h2 className="text-3xl font-bold mb-4">Core Technology</h2>
                 <p className="opacity-90">AIと動画生成の融合が、表現の可能性を広げます。</p>
@@ -71,9 +71,9 @@ const Technology: React.FC = () => (
                     { title: "Voice Synthesis", desc: "自然なAIボイスによる対話体験" },
                     { title: "Smart Logic", desc: "高度な意思決定アルゴリズム" }
                 ].map((item, idx) => (
-                    <div key={idx} className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
-                        <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                        <p className="text-sm opacity-80">{item.desc}</p>
+                    <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
+                        <h3 className="font-bold text-lg mb-2 text-black">{item.title}</h3>
+                        <p className="text-sm text-gray-600">{item.desc}</p>
                     </div>
                 ))}
             </div>
@@ -84,16 +84,16 @@ const Technology: React.FC = () => (
 const News: React.FC = () => (
     <section id="news" className="scroll-section bg-white">
         <div className="max-w-6xl mx-auto px-8 animate-fade-in w-full">
-            <h2 className="text-4xl font-bold text-[#0ea5e9] mb-12">NEWS</h2>
+            <h2 className="text-4xl font-bold text-black mb-12">NEWS</h2>
             <div className="space-y-6">
                 {[
                     { date: "2026.02.20", title: "AI音声エージェントの大型アップデートを実施しました。" },
                     { date: "2026.02.15", title: "「Tech Insight」にて弊社代表のインタビューが掲載されました。" },
                     { date: "2026.02.01", title: "新機能「波形アニメーション生成」をリリースしました。" }
                 ].map((item, idx) => (
-                    <div key={idx} className="flex flex-col md:flex-row md:items-center py-4 border-b border-gray-100 hover:bg-blue-50/50 transition-colors px-4 rounded-lg">
-                        <span className="text-blue-500 font-mono text-sm mb-1 md:mb-0 md:w-32">{item.date}</span>
-                        <span className="text-gray-800 font-medium">{item.title}</span>
+                    <div key={idx} className="flex flex-col md:flex-row md:items-center py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors px-4 rounded-lg">
+                        <span className="text-black/50 font-mono text-sm mb-1 md:mb-0 md:w-32">{item.date}</span>
+                        <span className="text-black font-bold">{item.title}</span>
                     </div>
                 ))}
             </div>
@@ -102,16 +102,16 @@ const News: React.FC = () => (
 );
 
 const CEO: React.FC = () => (
-    <section id="contact" className="scroll-section bg-[#0284c7] text-white">
+    <section id="contact" className="scroll-section bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-8 flex flex-col items-center text-center animate-fade-in">
-            <div className="w-24 h-1 bg-white mb-8 rounded-full"></div>
-            <h2 className="text-3xl font-bold mb-12 uppercase tracking-widest">代表取締役</h2>
-            <p className="text-xl italic leading-relaxed mb-8 opacity-90">
+            <div className="w-24 h-1 bg-white/20 mb-8 rounded-full"></div>
+            <h2 className="text-3xl font-bold mb-12 uppercase tracking-widest text-white/50">代表取締役</h2>
+            <p className="text-2xl font-medium leading-relaxed mb-8">
                 「AIは、人間のパートナーです。私たちの使命は、AIを通じてすべての人々が自分らしく、楽しく生きられる社会を創造することです。」
             </p>
             <div>
-                <p className="font-bold text-lg">山田 太郎</p>
-                <p className="text-sm opacity-70 uppercase tracking-widest">Representative Director & CEO</p>
+                <p className="font-bold text-xl text-white">山田 太郎</p>
+                <p className="text-xs text-white/40 uppercase tracking-widest mt-2">Representative Director & CEO</p>
             </div>
         </div>
     </section>
@@ -119,7 +119,7 @@ const CEO: React.FC = () => (
 
 const Footer: React.FC = () => (
     <section id="footer" className="scroll-section bg-white flex flex-col justify-end pb-6 px-4">
-        <div className="footer-container bg-[#3b82f6] text-white p-12 md:p-20 relative overflow-hidden flex flex-col justify-between min-h-[500px] w-full">
+        <div className="footer-container bg-black text-white p-12 md:p-20 relative overflow-hidden flex flex-col justify-between min-h-[500px] w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 relative z-10">
                 {/* Logo Section */}
                 <div className="lg:col-span-1">
