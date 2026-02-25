@@ -7,27 +7,37 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.414",
+    "@remotion/tailwind-v4": "4.0.414",
     "@remotion/zod-types": "4.0.414",
+    "dotenv": "^17.2.3",
+    "elevenlabs": "^1.59.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.414",
-    "zod": "3.22.3",
-    "@remotion/tailwind-v4": "4.0.414",
-    "tailwindcss": "4.0.0"
+    "tailwindcss": "4.0.0",
+    "zod": "3.22.3"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.414",
     "@types/react": "19.2.7",
     "@types/web": "0.0.166",
+    "@vitejs/plugin-react": "^5.1.2",
+    "concurrently": "^9.2.1",
     "eslint": "9.19.0",
     "prettier": "3.6.0",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vite": "^7.3.1"
   },
   "scripts": {
-    "dev": "remotion studio",
+    "dev": "npx vite",
+    "studio": "remotion studio",
+    "chat-only": "npx vite",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "test-dify": "npx tsx scripts/test-dify.ts",
+    "ask-bot": "npx tsx scripts/render-dify-video.ts",
+    "app": "npx vite"
   },
   "sideEffects": [
     "*.css"

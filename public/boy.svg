@@ -1,0 +1,20 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle (optional) -->
+  <circle cx="300" cy="300" r="280" fill="#e3f2fd" />
+  
+  <!-- Face -->
+  <circle cx="300" cy="250" r="120" fill="#ffccbc" />
+  
+  <!-- Hair (Short, Brown) -->
+  <path d="M180,200 Q300,50 420,200 Q420,250 400,250 Q300,100 200,250 Q180,250 180,200" fill="#5d4037" />
+  
+  <!-- Eyes -->
+  <circle cx="260" cy="240" r="10" fill="#333" />
+  <circle cx="340" cy="240" r="10" fill="#333" />
+  
+  <!-- Smile -->
+  <path d="M260,280 Q300,310 340,280" stroke="#d84315" stroke-width="5" fill="none" />
+  
+  <!-- Shirt (Blue) -->
+  <path d="M180,350 Q300,450 420,350 L420,600 L180,600 Z" fill="#1976d2" />
+</svg>
